@@ -31,11 +31,11 @@ default.
 Unless you want single back-ticks to denote ``literals``, as they do in
 Markdown. Then you might configure ```default_role = 'literal'``, but
 would have to write ``:any:`Class1``` to create a reference to the API
-documentation of :any:`Class1`. So pick your poison.
+documentation of `Class1`. So pick your poison.
 
-Some people like to document the API within the hand-written general
-documentation as they go along. So instead of just referring to `Class1`,
-they pull in its doc-string somewhere in the text:
+Some people like to document the API within the general documentation
+as they go along. So instead of just referring to `Class1`, they pull in
+its doc-string somewhere in the text:
 
 .. autoclass:: package.classes.Class1
     :noindex:
@@ -45,7 +45,7 @@ can easily link to, for example, Python's `pathlib <python:pathlib>`
 module. This needs to be set up in ``conf.py``, but makes for shorter
 link targets.
 
-One noteworthy shortcoming of using reST as the markup language is that
+One noteworthy shortcoming of using reST as a markup language is that
 we cannot have ``literals``, or even *emphasis*, inside link text.
 That's because `reStructuredText does not support nested markup
 <not_nested_>`_ of any kind. Note how `this <https://example.org>`_
@@ -53,8 +53,8 @@ works (which is ```this <https://example.org>`_`` in the source), but
 ```this`` <https://example.org>`_ is broken on this very page. Even
 though it's the same syntax as before, only with back-ticks around
 "this". (You'll have to click "Show Source" at the bottom of the page
-to see the original markup, as it doesn't seem possible to actually
-reproduce it on the rendered page, at least not inline.)
+to see the original markup, as it isn't possible to reproduce it on the
+rendered page, at least not inline.)
 
 
 .. _first-steps:
@@ -64,11 +64,10 @@ First steps
 
 This is a section inside the Overview chapter. We have marked it as
 a possible link target by putting ``.. _first-steps:`` right above
-the section header. Though we could also generate section labels
-automatically, once and for all, if we used the Autosectionlabel_
-extension.
+the section header. We could also generate section labels automatically,
+once and for all, if we used the Autosectionlabel_ extension.
 
-Maybe it's time for a code example:
+Here is a code example:
 
 .. code-block:: python
 
