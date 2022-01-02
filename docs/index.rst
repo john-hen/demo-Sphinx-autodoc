@@ -19,6 +19,10 @@ against:
 As for this demo, you can click on "Show Source" at the bottom of every
 page to see the reStructuredText from which it was rendered.
 
+.. image:: https://img.shields.io/badge/GitHub-100000?logo=github
+    :alt:    GitHub repo
+    :target: https://github.com/john-hen/demo-Sphinx-autodoc
+
 .. _Sphinx:              https://www.sphinx-doc.org
 .. _Autodoc:             https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html
 .. _Autosummary:         https://www.sphinx-doc.org/en/master/usage/extensions/autosummary.html
